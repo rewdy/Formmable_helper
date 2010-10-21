@@ -1,5 +1,4 @@
 <?php
-if (!defined('BASEPATH')) exit('No direct script access allowed'); 
 
 /* Andrew Meyer's Form Element Builder
  * You. Are. Going. To. Love. It!
@@ -12,9 +11,8 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
  *
  * TO DO
  * ---------------------------------------------------------------
- * Revisit the final $options variable/array in the element function.
- * There might be a better way to do this. It is used only minimally
- * for putting breaks after checkboxes/radio buttons.
+ * button() function hasn't really been rewritten since the (unreleased)
+ * first draft of this. Don't probably use it.
  */
  
 // PUBLIC FUNCTIONS
