@@ -2,7 +2,7 @@ h2. Formmable Helper
 
 h3. _What is it?_
 
-The Formmable helper is a simple collection of PHP fuctions to aid in the creation of form in web applications. It was designed to be used with Ellis Lab's _CodeIgniter_:http://codeigniter.com PHP framework, but can be easily used in any PHP environment.
+The Formmable helper is a simple collection of PHP fuctions to aid in the creation of form in web applications. It was designed to be used with Ellis Lab's "_CodeIgniter_":http://codeigniter.com PHP framework, but can be easily used in any PHP environment.
 
 h3. Installation/Inclusion
 
@@ -14,19 +14,19 @@ h3. How to Use
 
 There is basically one function you will use for most of your code generation. It is the @form_item()@ function. It takes four arguments. They are:
 
-* type _string_ (required; default is "text")
+* @$type@ _string_ (required; default is "text")
 ** Options are: @text@, @textarea@, @select@, @multiselect@, @radio@, or @checkbox@
-* name _string_ (required)
-* label _string_ (optional; used in the @<label></label>@ tag; No value will give you no label tag)
-* more _array_ (optional; all other options are sent as key/value pairs as part of this array)
+* @$name@ _string_ (required)
+* @$label@ _string_ (optional; used in the @<label></label>@ tag; No value will give you no label tag)
+* @$more@ _array_ (optional; all other options are sent as key/value pairs as part of this array)
  
 The items that the more array will take are:
 
-* options => array() (For selects, multiselects, radio buttons, and check boxes this is an array of key/value pairs. The key will be the value; the value will be the displayed text.)
-* selected => _string_ (For inputs that have options (see above) this should match the _key_ (which is the HTML attribute @value@) of the selected option)
-* attributes => array() (HTML attributes as key/value pairs for the input)
-* value => _string_ (For text and textareas, this is the initial value)
-* help_text => _string_ (Help text that will be printed below the input)
+* @$options => array()@ (For selects, multiselects, radio buttons, and check boxes this is an array of key/value pairs. The key will be the value; the value will be the displayed text.)
+* @$selected => _string_@ (For inputs that have options (see above) this should match the _key_ (which is the HTML attribute @value@) of the selected option)
+* @$attributes => array()@ (HTML attributes as key/value pairs for the input)
+* @$value => _string_@ (For text and textareas, this is the initial value)
+* @$help_text@ => _string_ (Help text that will be printed below the input)
 
 h3. Outputted HTML
 
